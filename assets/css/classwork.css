@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(14, 14, 14);
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+.btn{
+    background-image: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.navbar p{
+    color: rgb(255, 28, 28);
+    font-size: 30px;
+    font-weight: bold;
+}
+.primary{
+    color: rgb(138, 181, 247);
+    padding: 10px;
+}
+p{
+    color: rgb(189, 193, 197);
+    padding: 10px;
+}
+#classWorkHeading{
+    font-size: 2.5rem;
+}
+#classWorkBody{
+    color: rgb(189, 193, 197);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+#classWorkDate{
+    color: rgb(114, 114, 114);
+    padding: 5px 0px 5px 10px;
+}
+#classWorkMarks{
+    color: rgb(114, 114, 114);
+    padding: 5px 0px 5px 10px;
+}
+#mainCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#subMain{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+#classWorkInfoCont{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(189, 193, 197);
+}
+.commentMainCont{
+   
+    margin: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    border-top: 2px solid rgb(114, 114, 114);
+    /* border-radius: 5px; */
+
+    
+}
+.commentCont{
+    border-top: 1px solid rgb(114, 114, 114);
+}
+.comment{
+    /* padding: 5px; */
+    padding-top: 5px !important;
+    color: rgb(189, 193, 197);
+    
+}
+.commentUserName{
+    padding: 5px 0 0 10px!important;
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.date{
+    padding: 0 0 5px 10px !important;
+    color: rgb(114,114,114);
+    
+    font-size: .8rem;
+}
+input,textarea{
+    background-color: rgb(34, 34, 34);
+    color: rgb(189, 193, 197);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+.commentForm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.commentInput{
+    background-color: rgb(34,34,34);
+    color: rgb(189, 193, 197);
+    border: none;
+    width: 95%;
+    padding: 0px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+   
+}
+.commentInput:focus{
+    outline: none;
+}
+#fileUploadForm{
+    display: flex;
+    flex-direction: column;
+}
+#fileBtn{
+    font-size: 1.5rem;
+    color: rgb(189, 193, 197);
+}

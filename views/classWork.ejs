@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= data.heading%></title>
+    <link rel="stylesheet" href="/css/classwork.css">
+    <script src="https://kit.fontawesome.com/7065592652.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+        
+    </nav>
+    <div id="mainCont">
+        <div id="subMain">
+          <div id="classWorkInfoCont">
+            <h1 class="primary" id="classWorkHeading"><%= data.heading%></h1>
+            <p id="classWorkBody"><%= data.body%></p>
+            <p id="classWorkDate">Date: <%= data.submissionDate%></p>
+            <p id="classWorkMarks"><%=data.marks%> marks</p>
+          </div>
+          <p>comments</p>
+          <div class="commentMainCont">
+            <%for(var i=0;i<data.comments.length; i++) {%>
+                <div class="commentCont">
+                    <p class="commentUserName"><%=data.comments[i].userName%></p>
+                    <p class="comment"><%=data.comments[i].comment%></p>
+                    <p class="date"><%=data.comments[i].datePosted%></p>
+                </div>
+            <%}%>
+                    
+              
+        </div>
+        <form class="commentForm">
+            <input type="text" name='commentInput'class="commentInput" placeholder="comment on this post" autocapitalize="off">
+            <button class="commentBtn btn"><i class="fa fa-arrow-right fa-2x"></i></button>
+        </form>
+        </div>
+        <div id="uploadCont">
+            <input type="file">
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/classwork.js"></script>
+</html>

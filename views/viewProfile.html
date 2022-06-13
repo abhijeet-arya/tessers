@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/viewProfile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+    </nav>
+    <div id="profileMainCont">
+        <div id="profileCont">
+            <div id="profilePicCont">
+                <img id="profilePic" src="../assets/img/profilePic.webp" alt="">
+                <input id='profilePicFile'type="file">
+                <label for="profilePicFile" id="uploadPicBtn">choose photo</label>
+            </div>
+            <div class="profileSub">
+                <div class="name">
+                    <label for="firstName">first name</label>
+                    <input id="firstName" type="text" value="abhijeet" disabled>
+                </div>
+                <div class="name">
+                    <label for="lastName">last name</label>
+                    <input id="lastName"  type="text" value="arya" disabled>
+                </div>
+            </div>
+            <div class="labelCont">
+                <label for="email">email</label>
+                <input id="email" type="text" value="abhijeetarya74@gmail.com" disabled>
+            </div>
+            <div class="labelCont">
+                <label for="phoneNo">phone number</label>
+                <input id="phoneNo" type="text" value="nan" placeholder="enter phone number" disabled>
+            </div>
+            <div class="profileSub">
+                <div class="name">
+                    <label for="city">city</label>
+                    <input id="city" type="text" value="" placeholder="enetr city name" disabled>
+                </div>
+                <div class="name">
+                    <label for="zipCode">zip code</label>
+                    <input id="zipCode"  type="text" value="" placeholder="enter zip code" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../assets/js/viewProfile.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaching</title>
+    <link rel="stylesheet" href="/css/learning.css">
+    <script src="https://kit.fontawesome.com/7065592652.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+        <div>
+            <i id="createBtn" class="fa fa-plus"></i> 
+        </div>
+        
+    </nav>
+    <div id="showCreateBtns">
+        <p id="joinClass">Join Class</p>
+        <p id="joinRoom">Join Room</p>
+        <a id="createRoomBtn" href="/createRoom">Create Room</a>
+    </div>
+    <div class="joinCont">
+        <form class="joinForm" id="joinRoomForm" action="/joinRoom" method="POST" >
+            <input type="text" name="roomId" id="roomId" placeholder="room id">
+            <button type="submit" class="btn" id="joinRoomBtn">Join</button>
+        </form>
+    </div>
+    <div class="joinCont">
+        <form class="joinForm" id="joinClassForm" autocomplete="off">
+            <input type="text" name="classId" id="classId" placeholder="class id">
+            <button type="submit" class="btn" id="joinClassBtn">Join</button>
+        </form>
+    </div>
+    <div id="mainCont">
+        <div id="sideBar">
+            <h1>hbjhbj</h1>
+        </div>
+        <div id="classMainCont">
+            <% if(data.length>0){%>
+                <%var img =1;%>
+                <%for(var i =0;i<data.length; i++){%>
+                    <div class="classCont" style="background-image: url('/img/class/<%=img%>.jpg')">
+                        <p class="subName"><%= data[i].subName%></p>
+                        <p class="className"><%= data[i].className%></p>
+                        <span>class Id: <p class="classId"><%= data[i].classId%></p></span>
+                    </div>
+                    <%if(img>6){%>
+                        <% img=1%>
+                        <%}else{%>
+                            <% img++%>
+                            <%}%>
+                    <%}%>
+                <%}else{%>
+                    
+                    <%}%>
+            
+            
+        </div>
+
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/js/learning.js"></script>
+</html>

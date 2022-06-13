@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+    height: 110vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+#mainCont{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+#classInfoCont{
+    position: relative;
+    width: 100%;    
+    height: 30%;
+    /* background-image: url('../img/class/6.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(134, 85, 21);
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#className{
+    color: rgb(138, 181, 247);
+    
+    font-size: 2.5rem;
+}
+#subName{
+    color: rgb(189, 193, 197);
+    font-size: 1.5rem;
+}
+span{
+    color: rgb(189, 193, 197);
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+#classId{
+    display: inline-block;
+    margin-left: 10px;
+}
+#startBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+}
+.btn{
+    background-image: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    color: rgb(189, 193, 197);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+#postBtnCont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    
+    align-items: center;
+
+}
+
+.postBtn{
+    position: relative;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.postBtn::before{
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+.postPara{
+    color: rgb(138, 181, 247);
+}
+#postFormCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#announceForm{
+    display: none;
+    flex-direction: column;
+}
+input,textarea{
+    background-color: rgb(34, 34, 34);
+    color: rgb(189, 193, 197);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+}
+input:focus,textarea:focus{
+    outline: none;
+}
+label{
+    margin-left: 5px;
+    color: rgb(138, 181, 247);
+}
+
+
+
+
+#subMainCont{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: 2px solid rgb(189, 193, 197);
+    
+}
+#postMainCont{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 80%;
+    /* border-left: 2px solid rgb(114, 114, 114); */
+}
+#upComingCont{
+    width:20%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(81, 107, 129);
+    margin-right: 10px;
+}
+.postCont{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid rgb(114,114,114);
+    margin: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px 10px 0px 10px;
+}
+.fa-times{
+    color: white;
+    cursor: pointer;
+}
+.postUserName{
+    color: rgb(114, 114, 114);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.postHeading{
+    color: rgb(138, 181, 247);
+    font-size: 1.8rem;
+}
+.postBody{
+    color: rgb(189, 193, 197);
+    font-size: 1.2rem;
+}
+.date{
+    color: rgb(114,114,114);
+    margin-top: 5px;
+    font-size: .8rem;
+}
+.commentForm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.commentInput{
+    background-color: rgb(34,34,34);
+    color: rgb(189, 193, 197);
+    border: none;
+    width: 95%;
+    padding: 0px 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+   
+}
+.commentInput:focus{
+    outline: none;
+}
+
+.commentBtn{
+    padding: 5px !important;
+}
+.commentMainCont{
+   
+    margin: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border-top: 2px solid rgb(114, 114, 114);
+    /* border-radius: 5px; */
+
+    
+}
+.commentCont{
+    border-top: 1px solid rgb(114, 114, 114);
+}
+.comment{
+    /* padding: 5px; */
+    margin-top: 5px;
+    color: rgb(189, 193, 197);
+    
+}
+
+.classWorkCont{
+    padding: 10px !important;
+    cursor: pointer;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+.classWorkCont{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    padding: 10px;
+    color: rgb(138, 181, 247);
+    background-color: rgb(34, 34, 34);
+    border-radius: 1.8rem;
+
+}
+
+.material{
+    padding: 10px !important;
+    cursor: pointer;
+    flex-direction: row !important;
+    align-items: center !important;
+}

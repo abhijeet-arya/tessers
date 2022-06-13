@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/signup.css">
+    <title>Create new account</title>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+        <button class="btn">Login</button>
+    </nav>
+    <div class="signUpMainCont">
+        <h1 class="h-primary">Create new account</h1>
+        <p>Choose from 1,00,000+ online live classes</p>
+        <form action="login.html" method="post" id="signUpForm">
+            <div class="nameCont">
+                <input type="text" name="firstName" id="FirstName" placeholder="first name">
+                <input type="text" name="lastName" id="lastName" placeholder="last name">
+            </div>
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="password" name="password" id="password" placeholder="password">
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirm password">
+            <div id="catergoryCont">
+                <p>I'm</p>
+                <input type="radio" name="gender" value="male" id="student">
+                <label for="student">student</label> 
+                <input type="radio" name="gender" value="female" id="teacher">
+                <label for="teacher">teacher</label> 
+            </div>
+            <button class="btn signUpBtn">Create account</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

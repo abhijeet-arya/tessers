@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/video.css">
+    <script src="https://kit.fontawesome.com/7065592652.js" crossorigin="anonymous"></script>
+    <title>Tessers room</title>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+        <p id="count"></p>
+       
+        
+    </nav>
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Take photo</button> 
+      </div>
+      <canvas id="canvas">
+      </canvas>
+      <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box."> 
+      </div>
+    <div id="main">
+        
+        <div id="videoBtnTag">hello there</div>
+        <div id="meet">
+            <div id="buttonsCont">
+               <div id="subButtons">
+                <div class="videoButton" id="hand">
+                    <i class="fa fa-hand-paper-o fa-xl"></i>
+                </div>
+                <div class="videoButton" id="screenShare">
+                    <i class="fa fa-desktop fa-xl"></i>
+                </div>
+                <div class="videoButton" id="mic">
+                    <i class="fa fa-microphone fa-xl"></i>
+                <i class="fa fa-microphone-slash fa-xl"></i>
+                </div>
+                <div class="videoButton" id="hang">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                </div>
+                <div class="videoButton" id="cam">
+                    <i class='fas fa-video-slash fa-xl'></i>
+                <i class="fa fa-video-camera fa-xl"></i>
+                </div>
+                <div class="videoButton" id="tileView">
+                    <i class="fa-solid fa-table-cells-large fa-xl"></i>
+                </div>
+                <div class="videoButton" id="fullScreen">
+                    <i class="fa fa-arrows-alt fa-xl"></i>
+                <i class="fa-solid fa-minimize fa-xl"></i>
+                </div>
+               </div>
+                <div class="videoButton" id="options">
+                    <i class="fa fa-ellipsis-h fa-xl"></i>
+                </div>
+            </div>
+        </div>
+        <div id="message">
+
+        </div>
+    </div>
+    
+</body>
+<script src='https://tessersroom.in/external_api.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../assets/js/video.js"></script>
+<script src="../assets/js/takingAttendance.js"></script>
+</html>

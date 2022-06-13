@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/learningPrivateClass.css">
+    <%if(takePic){%>
+        <link rel="stylesheet" href="/css/takingPic.css">
+        <%} %>
+    <script src="https://kit.fontawesome.com/7065592652.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%if(takePic){%>
+        <%- include('takingPic.ejs') %>
+        <link rel="stylesheet" href="/css/takingPic.css">
+        <script src="/js/takingPic.js"></script>
+        <%} %>
+    <div id="mainCont">
+        <div id="classInfoCont">
+            <p id="className"><%= classData.className%></p>
+            <p id="subName"><%= classData.subName%></p>
+            <span>class Id:<p id="classId"><%= classData.classId%></Id:p></span>
+            <a href="#" class="btn" id="joinClassBtn">Join class</a>
+        </div>
+        <div id="postBtnCont">
+            <div class="postBtn" id="postAnnouncement">
+                <p class="postPara">Post announcement</p>
+            </div>
+        </div>
+        <div id="postFormCont">
+            <form id="announceForm">
+                <i class="fa fa-times fa-2x"></i>
+                <label for="announceHeading">Heading</label>
+                <input type="text" name="postHeading" id="announceHeading" placeholder="heading">
+                <label for="announceBody">Body</label>
+                <textarea name="postBody" id="announceBody" cols="90" rows="10" placeholder="describe something here"></textarea>
+                <button class="btn">Post Announcement</button>
+            </form>
+        </div>
+        <div id="subMainCont">
+            <div id="upComingCont">
+jhjhkugyguyugfyugsss
+            </div>
+            <div id="postMainCont">
+                <% if(classPostData.length>0){%>
+                    <% for(var i=0;i<classPostData.length; i++){%>
+                        
+                        <% if(classPostData[i].postType=='announcement'){%>
+                           
+                            <div class="postCont" id=<%= classPostData[i]._id%> >
+                                <p class="postUserName"><%= classPostData[i].userName%></p>
+                                <p class="postHeading"><%= classPostData[i].heading%></p>
+                                <p class="postBody"><%= classPostData[i].body%></p>
+                                <p class="date"><%= classPostData[i].datePosted%></p>
+                                <div class="commentMainCont">
+                                    <% if(classPostData[i].comments.length>0){%>
+                                        <%for(var j=0;j<classPostData[i].comments.length; j++) {%>
+                                            <div class="commentCont">
+                                                <p class="postUserName"><%=classPostData[i].comments[j].userName%></p>
+                                                <p class="comment"><%=classPostData[i].comments[j].comment%></p>
+                                                <p class="date"><%=classPostData[i].comments[j].datePosted%></p>
+                                            </div>
+                                        <%}%>
+                                    <%} %>
+                                </div>
+                                <form class="commentForm">
+                                    <input type="text" class="commentInput" placeholder="comment on this post">
+                                    <button class="commentBtn btn"><i class="fa fa-arrow-right fa-2x"></i></button>
+                                </form>
+                            </div>
+                        <%}%>
+                        <% if(classPostData[i].postType=='classWork'){%>
+                            <div class="classWorkCont postCont" id=<%=classPostData[i]._id%>>
+                               <div class="logo"><i class="fa fa-bookmark"></i></div>
+                               
+                               <div class="classWorkSubCont">
+                                <p class="classWorkPara postHeading"><%=classPostData[i].heading%></p>
+                                
+                                <p class="date"><%=classPostData[i].datePosted%></p>
+                               </div>
+                                
+                            </div>
+                        <%}%>
+                    <%}%> 
+                <%}else{%><center><P class="postHeading">No Post Yet</P></center><%}%>
+                
+                <!-- <div class="classWorkCont postCont">
+                    <div class="logo"><i class="fa fa-bookmark"></i></div>
+                    <p class="classWorkPara postHeading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div> -->
+                <!-- <div class="material postCont">
+                    <div class="logo"><i class="fa fa-file"></i></div>
+                    <p class="classWorkPara postHeading">Lorem ipsum dolor sit amet consecte ergreg hfth tur adipisicing elit.</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/learningPrivateClass.js"></script>
+<%if(takePic){%>
+    <script src="/js/takingPic.js" defer></script>
+    <%} %>
+</html>
+

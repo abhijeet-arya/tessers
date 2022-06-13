@@ -1,0 +1,43 @@
+
+#picCont{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34,34,34,.7);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#videoCont{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#canvasCont{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#video {
+  border: 2px solid black;
+    width:60%;
+    height:70%;
+  }
+
+#picParaCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.picPara{
+  color: rgb(189, 193, 197);
+}

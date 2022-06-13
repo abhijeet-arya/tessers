@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 30px;
+    position: relative;
+    
+   
+}
+.navbar p{
+    color: rgb(229, 9, 20);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    background-image: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+.navbar div i{
+    color: white;
+    font-size: x-large;
+    background: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#showCreateBtns{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    top: 57px;
+    right: 30px;
+    background: rgb(34,34,34);
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+}
+#showCreateBtns::before{
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(to top right,rgb(156, 58, 140),rgb(214, 48, 81),rgb(252, 143, 76));
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+}
+#showCreateBtns p{
+    color: white;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#showCreateBtns p:hover{
+    background-color: rgb(114,114,114);
+}
+.para{
+    color: rgb(114,114,114);
+    display: block;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 40vh;
+
+}
+#createMain{
+    position: fixed;
+    width: 95%;
+    height: 90%;
+    left: 50%;
+    margin-left: -47.25%;
+    background-color: rgba(34, 34, 34, 0.5);
+    display: none;
+}
+#createMain i{
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    float: left;
+}
+#paidClassCont{
+    background-color: orange;
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: none;
+}
+#privateClassCont{
+    background-color: orange;
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: none;
+}
+
+.joinForm{
+    padding-right: 25px;
+    justify-content: end;
+    display: none;
+}
+.joinForm input{
+    background-color: rgb(34, 34, 34);
+    font-size: 17px;
+    font-family: sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    color: white;
+}
+.joinForm input:focus{
+    outline: none;
+}
+.joinCont{
+    position: absolute;
+    display: inline-block;
+    top: 45px;
+    right: 0px;
+}
+
+#createRoomBtn{
+    display: block;
+    color: white;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+#createRoomBtn:hover{
+    background-color: rgb(114,114,114);
+}
+
+#mainCont{
+    display: flex;
+    height: 100%;
+}
+
+#sideBar{
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    border-right: 2px solid rgb(114,114,114);
+}
+#sideBar h1{
+    color: white;
+}
+#classMainCont{
+    display: inline-block;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+
+    /* justify-content: center; */
+}
+.classCont{
+    width: 30%;
+    height: 30%;
+    background-color: rgba(34,34,34,.5);
+    background-image: url('http://cdn.mos.cms.futurecdn.net/3TsMNbeMMu66hQS4DA58gb.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    margin: 18px;
+    cursor: pointer;
+    /* z-index: -2; */
+}
+.classCont p{
+    color: rgb(189,193,197);
+    margin: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.classCont span{
+    color: white;
+    margin: 10px;
+}
+.classId{
+    display: inline-block;
+    margin-left: 0 !important;
+}
+.className{
+    font-size: 20px !important;
+}
+.subName{
+    font-size: 25px !important;
+    color: rgb(138, 181, 247) !important;
+}
+

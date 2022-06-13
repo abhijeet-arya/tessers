@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(114,114,114); */
+    /* display: flex;
+    flex-direction: column; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    padding: 10px 30px;
+    
+   
+}
+.navbar p{
+    color: rgb(229, 9, 20);
+    font-size: 30px;
+    font-weight: bold;
+}
+#main{
+    height: 95%;
+    width: 100vw;
+    /* background-color: rgb(15, 15, 15); */
+    background-color: olivedrab;
+    margin: auto;
+    display: flex;
+}
+#meet{
+    position: relative;
+    display: block;
+    height: 92%;
+    width: 80%;
+    margin: auto 0;
+    background-color: rgb(14,14,14);
+    border-radius: 5px;
+}
+#message{
+    background-color: antiquewhite;
+    width: 20%;
+    height: 92%;
+    margin: auto;
+    /* margin-right: 10px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#buttonsCont{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(34,34,34);
+    height: 8%;
+    width: 100%;
+    display: flex; 
+    
+}
+#buttonsCont i{
+    margin: auto;
+    color: white;
+}
+#subButtons{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    margin: auto auto;
+    clear: both;
+}
+.videoButton{
+    /* width: 50px;
+    height: 50px; */
+    border: 2px solid rgb(114,114,114);
+    border-radius: 50px;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    margin: 5px;
+    cursor: pointer;
+}
+.fa-microphone{
+    display: none;
+}
+.fa-video-camera{
+    display: none;
+}
+.fa-minimize{
+    display: none;
+}
+#options{
+    right: 0px;
+    margin: auto 5px;
+    /* float: right; */
+}
+
+#videoBtnTag{
+    position: absolute;
+    color: white;
+    width: fit-content;
+    z-index: 999;
+    display: none;
+}
+
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width:720px;
+    height:540px;
+    display: none;
+  }
+  
+  #photo {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width:320px;
+    height:240px;
+  }
+  
+  #canvas {
+    display:none;
+  }
+  
+  .camera {
+    width: 340px;
+    display:inline-block;
+  }
+  
+  .output {
+    width: 340px;
+    display:inline-block;
+    vertical-align: top;
+  }
+  
+  #startbutton {
+      display: none;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:32px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+  }
+  

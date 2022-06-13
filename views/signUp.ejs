@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Create new account</title>
+</head>
+<body>
+    <nav class="navbar">
+        <p>Tessers</p>
+        <a href="/login" class="btn">Login</a>
+    </nav>
+    <div class="signUpMainCont">
+        <h1 class="h-primary">Create new account</h1>
+        <p>Choose from 1,00,000+ online live classes</p>
+        <form action="/api/newUser" method="POST" id="signUpForm">
+            <div class="nameCont">
+                <input type="text" name="firstName" id="firstName" placeholder="first name">
+                <input type="text" name="lastName" id="lastName" placeholder="last name">
+            </div>
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="password" name="password" id="password" placeholder="password">
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirm password">
+            <div id="catergoryCont">
+                <p>I'm</p>
+                <input type="radio" name="accountType" value="student" id="student">
+                <label for="student">student</label> 
+                <input type="radio" name="accountType" value="teacher" id="teacher">
+                <label for="teacher">teacher</label> 
+            </div>
+            <p id="errMsg"><%= message%></p>
+            <button class="btn signUpBtn">Create account</button>
+        </form>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/signUp.js"></script>
+</html>

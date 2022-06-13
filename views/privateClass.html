@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/takingPic.css">
+    <link rel="stylesheet" href="../assets/css/teachingPrivateClass.css">
+    <script src="https://kit.fontawesome.com/7065592652.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="picCont">
+        <div id="picParaCont">
+            <p class="picPara">Click photo for giving attendance in class.</p>
+            <p class="picPara">photo will be not saved,only face encodings will.</p>
+        </div>
+        <div id="videoCont">
+            <video id="video">Video stream not available.</video>
+        <button class="btn" id="takePic">Take Photo</button>
+        </div>
+        <div id="canvasCont">
+            <canvas id="canvas">
+            </canvas>
+            <div id="picBtnCont">
+                <button class="btn" id="retakePic">Retake</button>
+                <button class="btn" id="uploadPic">Upload</button>
+            </div>
+        </div>
+    </div>
+   
+    <div id="mainCont">
+        <div id="classInfoCont">
+            <p id="className">hello there</p>
+            <p id="subName">Lorem ipsum dolor sit.</p>
+            <span>class Id:<p id="classId">udheet</Id:p></span>
+            <p class="btn" id="startClassBtn">Start class</p>
+        </div>
+        <div id="postBtnCont">
+            <div class="postBtn" id="postAnnouncement">
+                <p class="postPara">Post announcement</p>
+            </div>
+            <div class="postBtn" id="postClassWork">
+                <p class="postPara">Post class work</p>
+            </div>
+            <div class="postBtn" id="material"><p class="postPara">Post study material</p></div>
+        </div>
+        <div id="postFormCont">
+            <form id="announceForm">
+                <i class="fa fa-times fa-2x"></i>
+                <label for="announceHeading">Heading</label>
+                <input type="text" name="postHeading" id="announceHeading" placeholder="heading">
+                <label for="announceBody">Body</label>
+                <textarea name="postBody" id="announceBody" cols="90" rows="10" placeholder="describe something here"></textarea>
+                <button class="btn">Post Announcement</button>
+            </form>
+            <form  id="classWorkForm">
+                <i class="fa fa-times fa-2x"></i>
+               <div id="classWorkFormCont">
+                <label for="classWorkHeading">Heading</label>
+                <input type="text" name="postHeading" id="classWorkHeading" placeholder="heading">
+                <label for="classWorkBody">Body</label>
+                <textarea name="postBody" id="classWorkBody" cols="80" rows="10" placeholder="describe something here"></textarea>
+                <button class="btn">Post Class Work</button>
+               </div>
+               <div id="xyz">
+                   <label for="submmissionDate">Submmision Date</label>
+                   <input type="date" name="submissionDate" id="submissionDate">
+                   <label for="marks">Marks</label>
+                   <input type="number" name="marks" id="marks" placeholder="full marks">
+               </div>
+            </form>
+        </div>
+        <div id="subMainCont">
+            <div id="upComingCont">
+jhjhkugyguyugfyugsss
+            </div>
+            <div id="postMainCont">
+                <div class="postCont">
+                    <p class="postUserName">Abhijeet Arya</p>
+                    <p class="postHeading">
+                        hejana qwdewj kjqdkjew
+                    </p>
+                    <p class="postBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta perspiciatis deleniti quo explicabo praesentium nam quos placeat numquam inventore? Repellat eum quasi doloremque vitae recusandae ducimus voluptas accusantium harum voluptatibus.</p>
+                    <p class="date">march 24</p>
+                    <div class="commentMainCont">
+                        <div class="commentCont">
+                            <p class="postUserName">Abhijeet Arya</p>
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae vero inventore non commodi tempora? Cumque placeat facilis esse natus?</p>
+                            <p class="date">march 25</p>
+                        </div>
+                        <div class="commentCont">
+                            <p class="postUserName">Abhijeet Arya</p>
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae vero inventore non commodi tempora? Cumque placeat facilis esse natus?</p>
+                            <p class="date">march 25</p>
+                        </div>
+                        <div class="commentCont">
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae vero inventore non commodi tempora? Cumque placeat facilis esse natus?</p>
+                            <p class="date">march 25</p>
+                        </div>
+                        <div class="commentCont">
+                            <p class="comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus beatae vero inventore non commodi tempora? Cumque placeat facilis esse natus?</p>
+                            <p class="date">march 25</p>
+                        </div>
+                    </div>
+                    <form class="commentForm">
+                        <input type="text" class="commentInput" placeholder="comment on this post">
+                        <button class="commentBtn btn" type="submit"><i class="fa fa-arrow-right fa-2x"></i></button>
+                    </form>
+                </div>
+                <div class="classWorkCont postCont">
+                    <div class="logo"><i class="fa fa-bookmark"></i></div>
+                    <p class="classWorkPara postHeading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="material postCont">
+                    <div class="logo"><i class="fa fa-file"></i></div>
+                    <p class="classWorkPara postHeading">Lorem ipsum dolor sit amet consecte ergreg hfth tur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../assets/js/teachingPrivateClass.js"></script>
+<!-- <script src="../assets/js/takingPic.js"></script> -->
+</html>
